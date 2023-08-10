@@ -1,0 +1,185 @@
+Deployment backend in internet 
+CD continous deployment
+front end deplymnet vercel netlify - easy
+backend - difficult
+
+pre CICI - aws axure lets u buys server online i.e. simple machine with one special featue.
+public IP is the feature it has
+
+http://ec2-3-106-121-245.ap-southeast-2.compute.amazonaws.com:3000/
+
+pre CICI - no automatic deployment, 
+i.e. when u push to girtub u also pull yout code from the server
+and then push to the server 
+
+public ip are limited its is how u identiyf your server / vERY SIMILAR TO DOMin name
+
+Dumb way to deploy
+
+> AWS backend deploynmnet \
+> sign in
+> search EC2 - its the compute/computer part of aws  ^^
+> launch instance
+> give name - todo-app (name)
+> machine - OS -  ubuntu (OS)
+> instance type - micro free (size)
+> password to the server - secured - MyFirstServer (key-pair) todo-app-class harkirt used - file downloaded
+> launch instance (Done and created)
+
+> open firwalls on port 80/443/22/3000/3001 (step2)
+> all ports are closed by default
+> goto machine 
+> (down) security
+> click link security group
+> add inbound rules
+> new rule
+> port 80 ipv4
+> port 80 ipv6
+> port 443 ipv4
+> port 443 ipv6
+> port 3000 ipv4
+> port 3000 ipv6
+> save
+> then save certificate in ur file
+> open termibnal there 
+> ls and check file is there or not
+> run ssh -i MyFirstServer.pem (eg next step)
+> ssh -i .\MyFirstServer.pem ubuntu@ec2-16-171-171-39.eu-north-1.compute.amazonaws.com
+> error will come press yess
+> FOLLOW THIS https://stackoverflow.com/questions/5264595/windows-chmod-600
+
+> u r now connected to the aws that machine
+
+> pwd - which folder i am in
+> git clone https://github.com/100xDevs-hkirat/week-9.git
+> cd>>>>>server
+> bring npm or node to ur machine
+> 
+>> how to install node in ubunto 20
+>
+> code 3rd step
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+OUTPUT last 3 lines : copy them
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+> and passte them again in terminal
+> 
+> nvm install node
+>
+> run "npm" and check
+>
+> npm install
+>
+> (run) node index.js
+>
+> using vi edit mongodb
+> i to insert esc to :wq
+>
+>
+>
+>
+>
+>
+>
+>
+
+ 
+
+              (Random imp points abt the steps above ^^ )
+> look for ipv4 dns - ec2-16-171-171-39.eu-north-1.compute.amazonaws.com
+> if anyone hits this url they can see what i want
+> ipv4 ADDRESS Via u can use as ip address vis port 80 and get to my server
+> open firwalls on port 80/443/22/3000/3001 (step2)
+> port are a way ro identify a process on a machine
+> are are various ports on server its not phisical concept
+> & u  can run various process on various ports
+> most imp is 80/443 - by default it will go ot 80/443 when u open google.com 1st req goes to 80/443 depend on proptol used
+> 80-http, 443-https proptocol (default)
+> https is very secured than http
+> (outbound rules) tell whether u r machine can interct to the internet
+> By defalut SSH port 22 is open 
+> SSH lets me connet to the instance over there
+> 
+> 
+> backend - has different url
+> 
+> 
+>
+> 
+> 
+>
+> 
+> 
+>
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
